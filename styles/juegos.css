@@ -26,6 +26,10 @@
     background-color: rgb(33, 33, 33);
     border: 0;
     border-radius: 1rem;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
 }
 .divBoton{
     padding: .15rem;
