@@ -1,8 +1,10 @@
+import axios from "axios"
 
+import Layout from "@/components/Layout"
 export default function Home() {
   return (
-    <div>
+    <Layout>
       <h1>hola</h1>
-    </div>
+    </Layout>
   )
 }

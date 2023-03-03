@@ -1,0 +1,123 @@
+.portada{
+  background-image: url("../public/img/gamingPortada.jpg");
+  height: 90vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+.logo{
+    width: 9%;
+}
+@media (max-width: 425px) {
+  .logo{
+    width: 20%;
+  }
+}
+@media (min-width: 1024px) {
+  .logo{
+    width: 7%;
+  }
+}
+@media (min-width: 1440px) {
+  .logo{
+    width: 5%;
+  }
+}
+
+.titulo{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(235, 235, 235);
+  font-size: 500%;
+}
+@media (max-width: 768px) {
+  .titulo{
+    font-size: 600%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+}
+@media (min-width: 768px) {
+  .titulo{
+    font-size: 600%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+  }
+}
+.botonera{
+    font-size: 100%;
+    height: 10vh;
+    color: #ff00c8;
+    display: block;
+    margin-bottom: 10rem;
+    text-align: center;
+  }
+  @media (max-width: 768px) {
+    .botonera{
+      display: none;
+    }
+  }
+  @media (min-width: 768px) {
+    .botonera{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+    }
+  }
+
+  .hvr-horizon {
+  }
+
+@media (min-width: 768px) {
+    /* Shutter Out Horizontal */
+    .hvr-horizon {
+      padding: 2.5% 1.5rem;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      cursor: cell;
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+    }
+    .hvr-horizon:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, #0088ff, #ff00d4) no-repeat center center fixed;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transform-origin: 50%;
+      transform-origin: 50%;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transition-duration: 0.5s;
+      transition-duration: 0.5s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    .hvr-horizon:hover, .hvr-horizon:focus, .hvr-horizon:active {
+      color: rgb(255, 255, 255);
+    }
+    .hvr-horizon:hover:before, .hvr-horizon:focus:before, .hvr-horizon:active:before {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+}
+
+.footer{
+  padding: 3%;
+  text-align: center;
+  background-color: rgb(26, 26, 26);
+}
