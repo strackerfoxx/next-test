@@ -17,7 +17,7 @@ export default function Game({juego}) {
       screenshots,
       short_description,
       status,
-      thumbnail
+      thumbnail,
     } = juego
   return (
     <Layout>
@@ -27,11 +27,11 @@ export default function Game({juego}) {
         </Head>
         <div className='contenedor producto full'>
             <Image width={1000}  height={1000} src={thumbnail} alt={`imagen de: ${title}`} className='imagen'/>
-            <div>
+            <div className='content'>
                <h1 className='heading title'>{title}</h1>
                <h2 className='heading'>Genero: {genre}</h2>
                <h2 className='heading'>Desarrollado por: {developer}</h2>
-                  <Link href={url}><button  className='verJuego'>Descargar Juego</button></Link>
+                <Link href={url}><button  className='verJuego'>Descargar Juego</button></Link>
             </div>
          </div>
          <div className='descripcion'>

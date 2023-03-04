@@ -19,10 +19,17 @@
     font-size: 5rem;
 }
 .title {
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top: 0;
 }
+@media (min-width: 768px) {
+    .title {
+        font-size: 4rem;
+        margin-top: 0;
+    }
+}
 .descripcion{
+    text-align: center;
     margin: 3rem 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -31,9 +38,17 @@
     flex: 1;
     flex-grow: 1;
 }
+.content{
+    padding-left: 1rem;
+}
+@media (max-width: 768px) {
+    .content {
+        padding: 0;
+    }
+}
 .verJuego {
     display: block;
-    margin-left: 2.5%;
+    margin: 0 auto;
     background-color: rgb(0, 162, 181);
     color: whitesmoke;
     text-decoration: none;
@@ -50,18 +65,6 @@
 .verJuego:hover {
     cursor: pointer;
     background-color: rgba(1, 163, 181, 0.456);
-}
-
-.galeria{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0rem;
-    margin: 2rem 0;
-}
-@media (min-width: 768px){
-    .galeria {
-        grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-    }
 }
 .imagen{
     width: 100%;

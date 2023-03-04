@@ -18,9 +18,12 @@ export default function Paginacion() {
                 <Link href="/?games=2" className='pagina' >2</Link>
                 <Link href="/?games=3" className='pagina' >3</Link>
                 <Link href="/?games=4" className='pagina' >4</Link>
+                <Link href={`/?games=2`} >{">"}</Link>
             </>
         )}
-        <Link href={`/?games=${pagina + 1}`} >{">"}</Link>
+        {pagina && pagina > 1 ? (
+            <Link href={`/?games=${pagina + 1}`} >{">"}</Link>
+        ): ""}
     </div>
   )
 }
