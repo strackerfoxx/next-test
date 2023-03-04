@@ -38,12 +38,14 @@ export default function Game({juego}) {
             <h4>{description}</h4>
          </div>
          <div className='requisitos'>
-         {minReq.graphics ? (
               <div>
                   <h2>Requisitos Minimos</h2>
-                  
+                  <h4>graficos: <span className='requisito'>{minReq?.graphics}</span></h4>
+                  <h4>memoria: <span className='requisito'>{minReq?.memory}</span></h4>
+                  <h4>os: <span className='requisito'>{minReq?.os}</span></h4>
+                  <h4>procesador: <span className='requisito'>{minReq?.processor}</span></h4>
+                  <h4>almacenamiento: <span className='requisito'>{minReq?.storage}</span></h4>
               </div>
-          ): ""}
          </div>
     </Layout>
   )
