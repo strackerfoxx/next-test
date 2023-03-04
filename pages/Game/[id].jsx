@@ -1,11 +1,11 @@
 import React from 'react'
 import axios from 'axios';
+import Game from '@/components/Game';
 
 export default function Juego({juego}) {
-    const {title} = juego
   return (
     <div>
-        <h2>{title}</h2>
+        <Game juego={juego} />
     </div>
   )
 }
