@@ -38,7 +38,12 @@ export default function Game({juego}) {
             <h4>{description}</h4>
          </div>
          <div className='requisitos'>
-            
+         {minReq.graphics ? (
+              <div>
+                  <h2>Requisitos Minimos</h2>
+                  
+              </div>
+          ): ""}
          </div>
     </Layout>
   )
