@@ -5,12 +5,12 @@
   background-size: cover;
   background-position: center center;
 }
-.logo{
+.logoPortada{
     display: flex;
+    cursor: pointer;
 }
 .divLogo{
     display: flex;
-    cursor: pointer;
     width: 8%;
     padding-bottom: 3rem;
 }
@@ -114,7 +114,7 @@ a{
 
 
 .header{
-  background-color: #121212;
+  background-color: #292929;
   padding-left: 3rem;
   padding-right: 3rem;
   justify-content: space-between;
@@ -132,7 +132,7 @@ a{
   display: flex;
   flex-direction: column;
   align-items: center;
-}
+} 
 @media (min-width: 768px) {
   .barra {
     flex-direction: row;
@@ -165,25 +165,6 @@ a{
   .header .panel{
     margin-top: 0rem;
   } 
-}
-
-.titulo{
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Lato, sans-serif;
-  font-weight: 400;
-  margin-top: 6rem;
-}
-
-@media (min-width: 320px) {
-  .header{
-      display: none;
-  }
-}
-@media (min-width: 768px) {
-  .header{
-    display: block;
-  }
 }
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
